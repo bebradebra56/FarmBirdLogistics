@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "730976577311",
+    "project_id": "farmbirdlogisitcs",
+    "storage_bucket": "farmbirdlogisitcs.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730976577311:android:39da23c3b67e4421ba722a",
+        "android_client_info": {
+          "package_name": "com.farmbirdfs.logjfeiowewg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3xksHUvqXbKRlyh1ZG6Cf7uIaEF1z7i4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

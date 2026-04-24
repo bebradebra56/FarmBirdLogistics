@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/farmBirdLogisticsBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/farm_bird_logistic_land_back" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/farmBirdLogisticsLoadingGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="farmBirdLogisticsProgress, farmBirdLogisticsProgressText" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/farmBirdLogisticsStateGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:constraint_referenced_ids="farmBirdLogisticsConnectionState" />
+
+
+    <ImageView
+        android:id="@+id/farmBirdLogisticsProgressText"
+        android:layout_width="291dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/farm_bird_logistic_loadi" />
+
+    <ProgressBar
+        android:id="@+id/farmBirdLogisticsProgress"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:indeterminateTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/farmBirdLogisticsProgressText"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <ImageView
+        android:id="@+id/farmBirdLogisticsConnectionState"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/farm_bird_logistic_state" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/farmBirdLogisticsNotiGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="farmBirdLogisticsNotifText,farmBirdLogisticsGrandButton,farmBirdLogisticsSkipButton,farmBirdLogisticsNotifText2,farmBirdLogisticsNotiBack" />
+
+    <ImageView
+        android:id="@+id/farmBirdLogisticsNotiBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/farmBirdLogisticsBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/farm_bird_logistic_land" />
+
+
+    <TextView
+        android:id="@+id/farmBirdLogisticsNotifText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/inter_bold"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Allow notifications about bonuses and promos"
+        android:textColor="@color/white"
+        android:textSize="31sp"
+        app:layout_constraintBottom_toTopOf="@+id/farmBirdLogisticsNotifText2"
+        app:layout_constraintEnd_toStartOf="@+id/farmBirdLogisticsGrandButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/farmBirdLogisticsBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lineHeight="30dp" />
+
+    <Button
+        android:id="@+id/farmBirdLogisticsGrandButton"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/farm_bird_logistic_btn"
+        android:fontFamily="@font/inter_bold"
+        android:text="Yes, I Want Bonuses!"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/farmBirdLogisticsSkipButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/farmBirdLogisticsNotifText" />
+
+    <Button
+        android:id="@+id/farmBirdLogisticsSkipButton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/farm_bird_logisic_ski"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:shadowColor="@color/white"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Skip"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/farmBirdLogisticsGrandButton"
+        app:layout_constraintStart_toStartOf="@+id/farmBirdLogisticsGrandButton" />
+
+
+    <TextView
+        android:id="@+id/farmBirdLogisticsNotifText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/inter_bold"
+        android:letterSpacing="0"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+
+        android:shadowRadius="5"
+        android:text="Stay tuned with best offers from our casino"
+        android:textColor="#BEFFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/farmBirdLogisticsSkipButton"
+        app:layout_constraintEnd_toEndOf="@+id/farmBirdLogisticsNotifText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/farmBirdLogisticsNotifText"
+        app:lineHeight="35dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

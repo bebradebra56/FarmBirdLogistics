@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/farm_bird_logistics_graph"
+    app:startDestination="@id/farmBirdLogisticsLoadFragment">
+
+    <fragment
+        android:id="@+id/farmBirdLogisticsLoadFragment"
+        android:name="com.farmbirdfs.logjfeiowewg.opf.presentation.ui.load.FarmBirdLogisticsLoadFragment"
+        android:label="FarmBirdLogisticsLoadFragment" >
+        <action
+            android:id="@+id/action_farmBirdLogisticsLoadFragment_to_farmBirdLogisticsV"
+            app:destination="@id/farmBirdLogisticsV"
+            app:popUpTo="@id/farm_bird_logistics_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/farmBirdLogisticsV"
+        android:name="com.farmbirdfs.logjfeiowewg.opf.presentation.ui.view.FarmBirdLogisticsV"
+        android:label="FarmBirdLogisticsV" />
+</navigation>
